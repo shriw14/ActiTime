@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Database connected ]]>
+    </line>
+    <line>
+      <![CDATA[Browser Launched Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Logged In Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Logged out Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser Closed]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-09-30T10:02:30 IST" name="Default suite" finished-at="2023-09-30T10:02:56 IST" duration-ms="25903">
+    <groups>
+    </groups>
+    <test started-at="2023-09-30T10:02:30 IST" name="Default test" finished-at="2023-09-30T10:02:56 IST" duration-ms="25903">
+      <class name="com.ActiTime.TestScript.CreateCustomer">
+        <test-method is-config="true" signature="databaseConnection()[pri:0, instance:com.ActiTime.TestScript.CreateCustomer@7e6f74c]" started-at="2023-09-30T10:02:30 IST" name="databaseConnection" finished-at="2023-09-30T10:02:30 IST" duration-ms="619" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Database connected ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- databaseConnection -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.ActiTime.TestScript.CreateCustomer@7e6f74c]" started-at="2023-09-30T10:02:30 IST" name="launchBrowser" finished-at="2023-09-30T10:02:42 IST" duration-ms="11733" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Launched Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginToActiTime()[pri:0, instance:com.ActiTime.TestScript.CreateCustomer@7e6f74c]" started-at="2023-09-30T10:02:42 IST" name="loginToActiTime" finished-at="2023-09-30T10:02:42 IST" duration-ms="449" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged In Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToActiTime -->
+        <test-method signature="createCustomer()[pri:0, instance:com.ActiTime.TestScript.CreateCustomer@7e6f74c]" started-at="2023-09-30T10:02:42 IST" name="createCustomer" finished-at="2023-09-30T10:02:54 IST" duration-ms="11149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method is-config="true" signature="LogoutFromActiTime()[pri:0, instance:com.ActiTime.TestScript.CreateCustomer@7e6f74c]" started-at="2023-09-30T10:02:54 IST" name="LogoutFromActiTime" finished-at="2023-09-30T10:02:56 IST" duration-ms="2315" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged out Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LogoutFromActiTime -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.ActiTime.TestScript.CreateCustomer@7e6f74c]" started-at="2023-09-30T10:02:56 IST" name="closeBrowser" finished-at="2023-09-30T10:02:56 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="closeDatabaseConn()[pri:0, instance:com.ActiTime.TestScript.CreateCustomer@7e6f74c]" started-at="2023-09-30T10:02:56 IST" name="closeDatabaseConn" finished-at="2023-09-30T10:02:56 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.sql.Connection.close()" because "this.con" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.sql.Connection.close()" because "this.con" is null
+at com.ActiTime.GenericLibrary.BaseClass.closeDatabaseConn(BaseClass.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:410)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDatabaseConn -->
+      </class> <!-- com.ActiTime.TestScript.CreateCustomer -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
